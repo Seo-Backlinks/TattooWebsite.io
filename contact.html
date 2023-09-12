@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="images/ai_tatoo_logo.png" alt=""></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#work">About</a></li>
+            <li><a href="#about">Contact us</a></li>
+            <li><a href="#careers">Privacy Policy</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="innerwrap">
+
+            <section class="section1 clearfix">
+                <div class="textcenter">
+                    <span class="shtext">Contact Us</span>
+                    <span class="seperator"></span>
+                    <h1>Drop Us a Mail</h1>
+                </div>
+            </section>
+
+            <section class="section2 clearfix">
+                <div class="col2 column1 first">
+                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                    <div class="sec2map" style='overflow:hidden;height:550px;width:100%;'>
+                        <div id='gmap_canvas' style='height:100%;width:100%;'></div>
+                        <div><small><a href="http://embedgooglemaps.com"> embed google maps </a></small></div>
+                        <div><small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small>
+                        </div>
+                        <style>
+                            #gmap_canvas img {
+                                max-width: none !important;
+                                background: none !important
+                            }
+                        </style>
+                    </div>
+                    <script type='text/javascript'>
+                        function init_map() {
+                            var myOptions = {
+                                zoom: 14, center: new google.maps.LatLng(19.0760, 72.8777),
+                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                            };
+                            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                            marker = new google.maps.Marker({
+                                map: map,
+                                position: new google.maps.LatLng(19.075314480255834, 72.88153973865361)
+                            });
+                            infowindow = new google.maps.InfoWindow({
+                                content: '<strong>My Location</strong><br>mumbai<br>'
+                            });
+                            google.maps.event.addListener(marker, 'click', function () {
+                                infowindow.open(map, marker);
+                            });
+                            infowindow.open(map, marker);
+                        }
+                        google.maps.event.addDomListener(window, 'load', init_map);
+                    </script>
+                </div>
+                <div class="col2 column2 last">
+                    <div class="sec2innercont">
+                        <div class="sec2addr ">
+                            <p>Address Will come here</p>
+                            <p><span class="collig">Phone :</span> +91 9892126279</p>
+                            <p><span class="collig">Email :</span> temp@gmail.com</p>
+                            <!-- <p><span class="collig">Fax :</span> +91 9999999999</p> -->
+                        </div>
+                    </div>
+                    <div class="sec2contactform">
+                        <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
+                        <form action="">
+                            <div class="clearfix">
+                                <input class="col2 first" type="text" placeholder="FirstName">
+                                <input class="col2 last" type="text" placeholder="LastName">
+                            </div>
+                            <div class="clearfix">
+                                <input class="col2 first" type="Email" placeholder="Email">
+                                <input class="col2 last" type="text" placeholder="Contact Number">
+                            </div>
+                            <div class="clearfix">
+                                <textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
+                            </div>
+                            <div class="clearfix"><input type="submit" value="Send"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <footer class="footer-main text-dark">
+        <div class="container">
+            <div class="row address-main">
+                <div class="col-lg-4 col-sm-12 col-xs-12">
+                    <div class="address-box clearfix">
+                        <div class="add-icon">
+                            <img src="Img/footer-icon-01.png" alt="" />
+                        </div>
+                        <div class="add-content">
+                            <h5>Address</h5>
+                            <p> Ghatkhopar (W). Mumbai 400086</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-xs-12">
+                    <div class="address-box clearfix">
+                        <div class="add-icon">
+                            <img src="Img/footer-icon-02.png" alt="" />
+                        </div>
+                        <div class="add-content">
+                            <h5>Phone</h5>
+                            <p> +(91) 9892126279</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-xs-12">
+                    <div class="address-box clearfix">
+                        <div class="add-icon">
+                            <img src="Img/footer-icon-03.png" alt="" />
+                        </div>
+                        <div class="add-content">
+                            <h5>Email</h5>
+                            <p> <a href="mailto:" style="text-decoration:none">collab@codewithfaraz.com</a> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Copyright Footer -->
+        <footer class="text-center">
+
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                            class="fa-brands fa-facebook"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                            class="fa-brands fa-youtube"></i></a>
+
+                    <!-- Google -->
+                    <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                            class="fa-brands fa-twitter"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-dark btn-floating m-1"
+                        href="https://www.instagram.com/us_tattoo_studio/?igshid=MzRlODBiNWFlZA%3D%3D" role="button"><i
+                            class="fa-brands fa-instagram"></i></a>
+
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                AI Tatoo © 2023 All Rights Reserved.
+                <!-- <br> <small>Developed By Pranay Galande</small> -->
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
